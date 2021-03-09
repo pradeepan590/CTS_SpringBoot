@@ -6,11 +6,14 @@ import com.pricematrix.PriceMatrixImpl;
 public class Test {
 	
 	 static int count=1;
-	 
+	
+	 /*
 	@Override
 	protected void finalize() throws Throwable {
 		System.out.println("Test object is garbage collected... "+count++);
 	}
+	
+	*/
 
 	public static void main(String[] args) {
 		
@@ -39,6 +42,7 @@ public class Test {
 		System.out.println("Cart2 total: "+total);
 		
 		
+		/*
 		Runtime rt=Runtime.getRuntime();
 		System.out.println(rt.maxMemory());
 		System.out.println(rt.freeMemory());
@@ -51,6 +55,8 @@ public class Test {
 		System.gc();
 		
 		System.out.println((rt.maxMemory()-rt.freeMemory()));
+		
+		*/
 		
 		
 		

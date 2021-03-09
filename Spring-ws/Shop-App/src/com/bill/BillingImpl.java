@@ -10,8 +10,8 @@ public class BillingImpl {
 	public void setPrice(PriceMatrixImpl price) {
 		this.price = price;
 	}
-
 	
+
 	/*
 	 * ---------------------
 	 * 	Design Issues
@@ -34,7 +34,7 @@ public class BillingImpl {
 	 *  
 	 *  What is the best solution?
 	 *  ------------------------------
-	 *  -> Do not create/find/look-up, instead ask some one (container) to inject dependency object: IoC(Inversion of control)
+	 *  -> Do not create/find or look-up, instead ask some one (container) to inject dependency object: IoC(Inversion of control)
 	 *  
 	 *  How Ioc can be implemented?
 	 *  -------------------------------
