@@ -1,0 +1,9 @@
+Twitter application
+-------------------------------------------------------------
+1. User can able to register a new account
+2. Single user can have multiple followers
+3. User can able to see all his tweets tweeted by his followeers
+4. Non followers of a user can not tweet that user
+5. Any Tweet from users followers should visible to the user
+------------------------------------------------------------------
+
