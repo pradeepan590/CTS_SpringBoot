@@ -30,7 +30,12 @@ public class ProductDaoImpl implements ProductDao {
 	// find a product by id
 	@Override
 	public Product findProductById(int id) {
-		return sf.getCurrentSession().get(Product.class, id);
+		Product prod = sf.getCurrentSession().get(Product.class, id);
+		if (prod == null) {
+			//throw new RuntimeException();
+		}
+
+		return prod;
 	}
 
 	// update Product

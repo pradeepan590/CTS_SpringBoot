@@ -5,6 +5,8 @@ import java.util.List;
 import com.cts.product.entity.Product;
 
 public interface ProductService {
+	
+	public void processTransaction();
 
 	// save product
 	void saveProduct(Product prod);
