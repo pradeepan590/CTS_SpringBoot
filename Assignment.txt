@@ -7,3 +7,10 @@ Twitter application
 5. Any Tweet from users followers should visible to the user
 ------------------------------------------------------------------
 
+
+http://localhost:8082/api/search/DELHI/CHENNAI/2021-02-26/3
+http://localhost:8082/api/search/DELHI/CHENNAI/2021-02-26/4
+http://localhost:8082/api/search/DELHI/CHENNAI/2021-02-26/20
+
+
+
