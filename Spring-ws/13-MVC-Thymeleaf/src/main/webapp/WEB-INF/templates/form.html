@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 align="center">Product Form</h1>
+	<hr />
+
+	<form action="s6" method="post" >
+
+		<table align="center">
+		
+			<tr>
+				<th>Name</th>
+				<td><input type="text" name="name" /></td>
+			</tr>
+
+			<tr>
+				<th>Price</th>
+				<td><input type="text" name="price" /></td>
+			</tr>
+			<tr>
+				<th>Description</th>
+				<td><textarea name="description"></textarea></td>
+			</tr>
+			
+			<tr>
+				<th colspan="2">
+				  <p th:text="${msg}"></p>
+				</th>
+			</tr>
+
+			<tr>
+				<th colspan="2"><input type="submit" value="Save"></th>
+			</tr>
+
+
+		</table>
+
+
+	</form>
+	
+	<hr/>
+
+
+</body>
+</html>

@@ -12,6 +12,10 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @ComponentScan("com.cts.product.controller")
 public class WebConfig implements WebMvcConfigurer {
+	
+	public WebConfig() {
+		System.out.println(">>> WebConfig class object created..");
+	}
 
 	
 	// View Resolver
