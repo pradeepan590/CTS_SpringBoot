@@ -3,19 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<script>
+
+function validateForm(){
+  
+  var name=document.querySelector("#name");
+  if(name.value==="" || name.value===" " || name.value.length <=0 ){
+      document.getElementById("nameError").innerHTML="Name must be provided";
+      return false;
+   }
+   
+   return true;
+
+
+}
+
+
+</script>
 </head>
 <body>
 
 	<h1 align="center">Product Form</h1>
 	<hr />
 
-	<form action="s6" method="post" >
+	<form action="s6" method="post"  onSubmit="return validateForm()" >
 
 		<table align="center">
 		
 			<tr>
 				<th>Name</th>
-				<td><input type="text" name="name" /></td>
+				<td><input type="text"  id="name" name="name" /></td>
+				<td>
+					<span id="nameError"></span>
+				</td>
 			</tr>
 
 			<tr>
