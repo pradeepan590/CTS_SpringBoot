@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import com.cts.product.service.ProductService;
 import com.cts.product.service.ProductServiceImpl;
 
 @SpringBootApplication
@@ -15,7 +16,7 @@ public class Application {
 		
 	   ApplicationContext ac=SpringApplication.run(Application.class, args);
 	   
-	   ProductServiceImpl ps = ac.getBean(ProductServiceImpl.class);
+	   ProductService ps = ac.getBean(ProductService.class);
 	   
 	   ps.f2();
 	   
